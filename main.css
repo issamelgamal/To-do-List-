@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.name {
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ddd;
+    transition: font-size 0.2s;
+    margin-bottom: 20px;
+}
+
+.name:hover {
+    font-size: 25px;
+}
+
+.container {
+    width: 700px;
+    margin: 20px auto;
+}
+
+
+@media(max-width: 767px) {
+    .container {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+
+#savedDate {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Form styling */
+.form {
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.add {
+    border: none;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Tasks container */
+.tasks {
+    background-color: #eee;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* Task item styles */
+.tasks .task {
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.tasks .task:last-child {
+    margin-bottom: 30px;
+    border-bottom: 5px solid #ccc;
+}
+
+.tasks .task:hover {
+    background-color: #f7f7f7;
+}
+
+.tasks .task.done {
+    opacity: 0.5;
+}
+
+.tasks .task span {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Delete All button */
+.container .deleteAll {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    padding: 6px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+.container .footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: #EEE;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container .footer span {
+    font-size: 20px;
+    color: #0075ff;
+}
+
+@media(max-width: 480px) {
+    .name {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    button, .add {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .tasks .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container .footer {
+        font-size: 14px;
+    }
+}
